@@ -148,8 +148,9 @@ button { font: inherit; }
   transition: color .3s ease, border-color .3s ease;
 }
 .ig-link:hover { color: var(--gold); border-color: var(--gold); }
-.header-actions .ig-link { width: 48px; height: 48px; }
-.header-actions .ig-link svg { width: 26px; height: 26px; }
+.header-actions .ig-link { width: 54px; height: 54px; color: var(--gold); border-color: var(--gold); }
+.header-actions .ig-link svg { width: 32px; height: 32px; }
+.header-actions .ig-link:hover { background: var(--gold); color: var(--black); }
 .footer-social { display: inline-flex; }
 .footer-social .ig-link { width: 40px; height: 40px; }
 .mini-footer .wrap { align-items: center; }
