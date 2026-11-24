@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design system · TAPNOIR</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#10100F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body style="background: var(--porcelain); color: var(--black)">
+<main class="on-light">
+
+  <header class="bg-black">
+    <div class="wrap" style="padding-top: 72px; padding-bottom: 64px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 40px">
+      <div class="stack" style="gap: 18px">
+        <span class="label" style="letter-spacing: 0.32em; color: var(--gold)">Design system · v0.1</span>
+        <h1 style="margin: 0; font-family: var(--sans); font-weight: 700; font-size: clamp(3rem, 5vw, 72px); line-height: 0.95; letter-spacing: -0.03em; text-transform: uppercase; color: var(--porcelain)">Modern luxury<br><span style="font-family: var(--serif); font-style: italic; font-weight: 400; text-transform: none; letter-spacing: -0.01em; color: var(--gold)">dark editorial.</span></h1>
+      </div>
+      <p style="margin: 0; max-width: 380px; font-size: 15px; line-height: 1.7; color: var(--muted)">Luxury fashion house meets premium industrial product studio. Black leads, ivory gives contrast, gold is a whisper — never a shout.</p>
+    </div>
+  </header>
+
+  <section class="wrap stack" style="padding-top: 64px; gap: 24px">
+    <div class="ds-head"><h2 class="ds-h">01 — Colour</h2><span class="ds-note">Ratio guide: 60 black · 25 ivory · 10 espresso · 5 gold</span></div>
+    <div class="ds-swatches">
+      <div><div class="ds-chip" style="background: #10100F"></div><strong style="font-family: var(--sans); font-weight: 600; font-size: 15px">Obsidian Black</strong><span class="ds-note">#10100F<br>Main background, primary identity</span></div>
+      <div><div class="ds-chip" style="background: #E9E1D5"></div><strong style="font-family: var(--sans); font-weight: 600; font-size: 15px">Champagne Ivory</strong><span class="ds-note">#E9E1D5<br>Light sections, text on black</span></div>
+      <div><div class="ds-chip" style="background: #B69A70"></div><strong style="font-family: var(--sans); font-weight: 600; font-size: 15px">Muted Champagne Gold</strong><span class="ds-note">#B69A70<br>Accents only: hairlines, labels, icons</span></div>
+      <div><div class="ds-chip" style="background: #49372C"></div><strong style="font-family: var(--sans); font-weight: 600; font-size: 15px">Dark Espresso</strong><span class="ds-note">#49372C<br>Secondary backgrounds, product scenes</span></div>
+      <div><div class="ds-chip" style="background: #F7F4EF; border: 1px solid #D9D1C5"></div><strong style="font-family: var(--sans); font-weight: 600; font-size: 15px">Soft Porcelain</strong><span class="ds-note">#F7F4EF<br>Clean product sections</span></div>
+    </div>
+    <div class="ds-note" style="display: flex; flex-wrap: wrap; gap: 8px 32px">
+      <span>Gold on black: 7.1 : 1 ✓ text-safe</span>
+      <span>Gold on ivory: decorative only — use Espresso for text</span>
+      <span>Muted text on black: #B3ABA0</span>
+    </div>
+  </section>
+
+  <section class="wrap stack" style="padding-top: 64px; gap: 24px">
+    <div class="ds-head"><h2 class="ds-h">02 — Typography</h2><span class="ds-note">Power sans for the statement · serif italic for the feeling</span></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px">
+      <div class="stack" style="gap: 16px">
+        <span class="label" style="letter-spacing: 0.24em; color: var(--espresso)">Display · Sora 700</span>
+        <span style="font-family: var(--sans); font-weight: 700; font-size: 64px; line-height: 0.95; letter-spacing: -0.035em; text-transform: uppercase">Every<br>connection</span>
+        <span class="ds-note" style="line-height: 1.6">Uppercase headlines, tracking −3.5%, line-height 0.92–0.96. Sizes 96 / 72 / 48 / 32.</span>
+      </div>
+      <div class="stack" style="gap: 16px">
+        <span class="label" style="letter-spacing: 0.24em; color: var(--espresso)">Editorial · Cormorant Garamond Italic</span>
+        <span style="font-family: var(--serif); font-style: italic; font-size: 76px; line-height: 0.9; letter-spacing: -0.01em">without limits.</span>
+        <span class="ds-note" style="line-height: 1.6">One phrase per headline, ~118% of the sans size. Never for body or UI.</span>
+      </div>
+      <div class="stack" style="gap: 16px">
+        <span class="label" style="letter-spacing: 0.24em; color: var(--espresso)">Body &amp; UI · Manrope</span>
+        <span style="font-size: 18px; line-height: 1.65">A premium smart business card. Your identity, one tap away — shared in a single, effortless gesture.</span>
+        <span style="font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase">Label · 12 / 0.3em tracking</span>
+        <span class="ds-note" style="line-height: 1.6">Body 18 / 16 / 14, line-height 1.65. Labels uppercase, widely tracked.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap stack" style="padding-top: 64px; gap: 24px">
+    <div class="ds-head"><h2 class="ds-h">03 — Elements</h2><span class="ds-note">Square corners on UI · 16–18px only on the physical card</span></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 16px">
+      <div class="bg-black" style="padding: 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 28px">
+        <a class="btn btn-ivory" href="#">Explore collection</a>
+        <a class="btn btn-gold" href="#" style="padding: 0 28px">Enquire</a>
+        <a class="link-line" href="#" style="min-height: 56px">Discover ↗</a>
+        <p class="eyebrow" style="width: 100%">Eyebrow label</p>
+      </div>
+      <div class="bg-ivory" style="padding: 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 28px">
+        <a class="btn btn-black" href="#">Explore collection</a>
+        <a class="btn btn-dark" href="#" style="padding: 0 28px; border-color: var(--espresso)">Enquire</a>
+        <p class="eyebrow dark" style="width: 100%">Eyebrow on ivory</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top: 64px; padding-bottom: 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px">
+    <div class="stack" style="gap: 14px">
+      <h2 class="ds-h" style="border-bottom: 1px solid #D9D1C5; padding-bottom: 14px">04 — Do</h2>
+      <span style="font-size: 15px; line-height: 1.6">Cinematic studio light, deep natural shadows · matte black, brushed metal, champagne finishes · generous whitespace · one idea per section · slow, subtle motion (600–1100ms ease-out).</span>
+    </div>
+    <div class="stack" style="gap: 14px">
+      <h2 class="ds-h" style="border-bottom: 1px solid #D9D1C5; padding-bottom: 14px">05 — Avoid</h2>
+      <span style="font-size: 15px; line-height: 1.6">Blue/purple gradients · rounded SaaS cards · icon grids · cartoon illustration · gold fills or glowing gold effects · stock imagery · crowded sections.</span>
+    </div>
+  </section>
+</main>
+</body>
+</html>

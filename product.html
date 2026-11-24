@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personalise your card · TAPNOIR</title>
+<meta name="description" content="Design your TAPNOIR card: choose Noir or Blanc, add your name and title, and preview it live.">
+<meta name="theme-color" content="#10100F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="TAPNOIR home">TAPNOIR</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="collection.html" aria-current="page">Collection</a>
+      <a href="about.html">Philosophy</a>
+      <a href="index.html#how">How it works</a>
+      <a href="packages.html">Packages</a>
+      <a class="nav-cta" href="contact.html">Enquire</a>
+    </nav>
+    <a class="header-cta" href="contact.html">Enquire</a>
+  </div>
+</header>
+<main id="content">
+
+  <nav class="wrap" aria-label="Breadcrumb" style="padding-top: 24px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted-2)">
+    <a href="collection.html" style="color: var(--muted-2)">Collection</a> / <span style="color: var(--ivory)" data-finish-name aria-current="page">Noir — Matte Black</span>
+  </nav>
+
+  <section class="wrap" style="padding-top: 40px; padding-bottom: clamp(80px, 9vw, 130px); display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+
+    <div style="flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+      <div class="preview-box">
+        <span class="preview-tag" aria-hidden="true" style="left: 32px; color: var(--muted-2)">Live preview</span>
+        <span class="preview-tag" aria-hidden="true" style="right: 32px; color: var(--gold)" data-side-label>Front</span>
+        <div class="stage float-a" style="width: min(600px, 100%)">
+          <div class="flip" data-flip>
+            <div class="face f-black">
+              <div class="c-top">
+                <span class="c-brand">TAPNOIR</span>
+                <svg aria-hidden="true" width="30" height="30" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="opacity: 0.8"><path d="M9 9c2.4 2.8 2.4 7.2 0 10"/><path d="M13.5 6c4 4.5 4 11.5 0 16"/><path d="M18 3c5.6 6.2 5.6 15.8 0 22"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 10px">
+                <span class="n-serif" data-name-out>Your Name</span>
+                <span style="font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.75" data-title-out>Founder · Company</span>
+              </div>
+            </div>
+            <div class="face rear f-black">
+              <div class="c-top">
+                <span style="font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.7">Tap or scan</span>
+                <span class="c-brand">[LOGO]</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: flex-end">
+                <span style="font-family: var(--serif); font-style: italic; font-size: 22px">tapnoir.com/[name]</span>
+                <div role="img" aria-label="QR code placeholder" style="width: 86px; height: 86px; border: 1px dashed currentColor; opacity: 0.6; display: flex; align-items: center; justify-content: center; font-size: 10px; letter-spacing: 0.2em">QR</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor-shadow" style="bottom: 70px; left: 20%; width: 60%; height: 28px; background: radial-gradient(closest-side, rgba(0,0,0,0.9), rgba(0,0,0,0))"></div>
+      </div>
+      <div role="group" aria-label="Card side" style="display: flex; flex-wrap: wrap; gap: 12px">
+        <button class="chip" type="button" data-side="front" aria-pressed="true">Front</button>
+        <button class="chip" type="button" data-side="back" aria-pressed="false">Back</button>
+      </div>
+    </div>
+
+    <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
+      <div class="stack" style="gap: 16px">
+        <span class="label" style="letter-spacing: 0.3em; color: var(--gold)">The signature card</span>
+        <h1 class="display" style="font-size: clamp(2.4rem, 4vw, 3.8rem)">Make it<br><em>unmistakably yours.</em></h1>
+        <p class="lead" style="font-size: 15px">Made to order for you. Design it here, then we'll send a personal quote.</p>
+      </div>
+
+      <div class="opt-group">
+        <span class="opt-label" id="finish-lbl">Finish — <span style="color: var(--porcelain)" data-finish-name>Noir — Matte Black</span></span>
+        <div role="group" aria-labelledby="finish-lbl" style="display: flex; gap: 14px">
+          <button class="sw sw-noir" type="button" data-swatch="noir" aria-label="Noir — Matte Black" aria-pressed="true"></button>
+          <button class="sw sw-blanc" type="button" data-swatch="blanc" aria-label="Blanc — White" aria-pressed="false"></button>
+        </div>
+      </div>
+
+      <div class="opt-group">
+        <label class="opt-label" for="nm">Name on card</label>
+        <input id="nm" class="field" type="text" placeholder="Your Name" maxlength="28" autocomplete="name">
+        <label class="opt-label" for="tt" style="margin-top: 8px">Title · company</label>
+        <input id="tt" class="field" type="text" placeholder="Founder · Company" maxlength="40" autocomplete="organization-title">
+      </div>
+
+      <div class="opt-group">
+        <span class="opt-label" id="letter-lbl">Lettering</span>
+        <div role="group" aria-labelledby="letter-lbl" style="display: flex; flex-wrap: wrap; gap: 10px">
+          <button class="chip" type="button" data-lettering="serif" aria-pressed="true"><span style="font-family: var(--serif); font-style: italic; font-size: 20px; text-transform: none; letter-spacing: 0">Editorial serif</span></button>
+          <button class="chip" type="button" data-lettering="sans" aria-pressed="false"><span style="font-family: var(--sans); font-weight: 700; font-size: 13px">MODERN SANS</span></button>
+        </div>
+      </div>
+
+      <div class="opt-group" style="gap: 12px">
+        <a class="btn btn-ivory btn-lg btn-block" href="contact.html" data-enquire-design>Enquire about this design</a>
+        <a class="btn btn-ghost btn-lg btn-block" href="https://wa.me/[WHATSAPP NUMBER]" style="border-color: rgba(233,225,213,0.3)">Ask on WhatsApp</a>
+        <span style="font-size: 13px; line-height: 1.6; color: var(--muted-2)">Price on enquiry · [delivery time]</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-porcelain on-light">
+    <div class="wrap pad-sm" style="display: flex; flex-wrap: wrap; gap: 56px 96px">
+      <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 24px">
+        <p class="eyebrow">The details</p>
+        <h2 class="display" style="font-size: clamp(2.2rem, 4vw, 4rem)">Made to<br><em>be held.</em></h2>
+      </div>
+      <dl class="specs">
+        <div><dt>Material</dt><dd>[To be announced]</dd></div>
+        <div><dt>Dimensions</dt><dd>[Size · thickness]</dd></div>
+        <div><dt>Chip</dt><dd>[Smart chip]</dd></div>
+        <div><dt>Personalisation</dt><dd>[Engraving method]</dd></div>
+        <div><dt>In the box</dt><dd>[Contents]</dd></div>
+        <div><dt>Compatibility</dt><dd>[Supported phones]</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bg-espresso">
+    <div class="wrap pad-sm" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
+      <h2 class="display d-md" style="flex: 999 1 560px">The card is the key.<br><em style="color: var(--ivory)">Your profile is the room.</em></h2>
+      <a class="btn btn-ivory btn-lg" href="profile.html">Preview the profile ↗</a>
+    </div>
+  </section>
+</main>
+<footer class="mini-footer" style="border-top: 0">
+  <div class="wrap">
+    <span class="brand">TAPNOIR</span>
+    <span>© <span data-year>2026</span> · <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
